@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="garage.js"></script>
+    <meta charset="UTF-8">
+    <title>Garage</title>
+</head>
+<body>
+<h2>Add Car</h2>
+<form onsubmit="checkIn(); return false;">
+    <p><b>Car registration:</b></p>
+    <input type="text" id="newcar" placeholder="Enter car registration">
+    <p><b>Damages:</b></p>
+    <input type="checkbox" class="damages" value="tire"> Flat tire <br>
+    <input type="checkbox" class="damages" value="windscreen"> Broken windscreen <br>
+    <input type="checkbox" class="damages" value="dent"> Body dent <br>
+    <input type="checkbox" class="damages" value="scratch"> Scratches <br>
+    <button>Submit</button>
+</form>
+
+<div id="byecar">
+    <h2>Check out car</h2>
+    <form>
+        <p><b>Car registration:</b></p>
+        <input id="outcar" type="text" placeholder="Enter car registration">
+        <button onclick="checkOut(); return false;">Check Out</button>
+    </form>
+</div>
+
+<h2>Garage contents</h2>
+<form onsubmit="garage(); return false;">
+    <button>Show garage</button>
+</form>
+<div id="garageout"></div>
+
+<h2>Calculate bill</h2>
+<form onsubmit="calculateBill(); return false;">
+    <p><b>Car registration:</b></p>
+    <input id="billcar" type="text" placeholder="Enter car registration">
+    <button>Get bill</button>
+</form>
+<div id="billout"></div>
+</body>
+</html>

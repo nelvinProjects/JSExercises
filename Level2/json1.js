@@ -9,7 +9,7 @@ function readJSON() {
         dataToUse = request.response;
         // console.log(dataToUse)
         // console.log(JSON.stringify(dataToUse))
-        document.writeln("Squad Name: " + dataToUse['squadName']);
+        document.writeln("<b>Squad Name: </b>" + dataToUse['squadName']);
         document.writeln("<br>");
         document.writeln("Squad Town: " + dataToUse['homeTown']);
         document.writeln("<br>");
