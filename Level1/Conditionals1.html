@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditionals 1</title>
+</head>
+<body>
+<script>
+    var Person = {name: "Tom", age: 20};
+    var Person1 = {name: "Tim", age: 18};
+    var Person2 = {name: "Bob", age: 40};
+    var Person3 = {name: "Sim", age: 41};
+    function checkAge(object) {
+        if (object.age >= 20 && object.age <= 40){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    document.writeln(checkAge(Person));
+    document.writeln("<br>");
+    document.writeln(checkAge(Person1));
+    document.writeln("<br>");
+    document.writeln(checkAge(Person2));
+    document.writeln("<br>");
+    document.writeln(checkAge(Person3));
+</script>
+</body>
+</html>
