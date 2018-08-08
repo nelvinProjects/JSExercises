@@ -1,3 +1,5 @@
+'use strict';
+
 function readJSON() {
     var dataToUse;
     var data = 'https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/example.json';
